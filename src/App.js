@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import { Header } from "semantic-ui-react";
+import { Header, Container, Menu } from "semantic-ui-react";
 
 import "./App.css";
 
@@ -15,7 +15,22 @@ class App extends Component {
             Project Mini-Mek
           </Header>
         </div>
-        <SampleComponent />
+        <Container>
+          <Menu tabular>
+            <Menu.Item name="unitInfo" active={true}>
+              Unit Info
+            </Menu.Item>
+            <Menu.Item name="pilots" active={false}>
+              Pilots
+            </Menu.Item>
+            <Menu.Item name="mechs" active={false}>
+              Mechs
+            </Menu.Item>
+            <Menu.Item name="unitOrganization" active={false}>
+              Unit Organization
+            </Menu.Item>
+          </Menu>
+        </Container>
       </div>
     );
   }
