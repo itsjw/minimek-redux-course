@@ -14,6 +14,7 @@ import { Provider } from "react-redux";
 //   document.getElementById("root")
 // );
 
+import "semantic-ui-css/semantic.css";
 
 import configureStore from "./store/configureStore";
 const store = configureStore();
