@@ -11,7 +11,7 @@ class SampleComponent extends Component {
 
         return (
             <div>
-                Data from Redux: {data}
+                Datax from Redux: {data}
             </div>
         );
     }
